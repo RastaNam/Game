@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungle Ninja Duel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🌴 JUNGLE NINJA DUEL ⚔️</h1>
+            <div class="stats">
+                <div>Уровень: <span id="level">1</span>/5</div>
+                <div>Жизни: <span id="health">100</span></div>
+                <div>Враги: <span id="enemies">3</span></div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        
+        <div class="controls">
+            <div class="instructions">
+                <p>⬅️ ➡️ - Движение | ⬆️/ПРОБЕЛ - Прыжок | ⬇️ - Присесть/Супер-прыжок | X - Атака</p>
+                <p>✨ Секрет: Присесть + Прыжок = Высокий прыжок!</p>
+            </div>
+            <div class="buttons">
+                <button id="startBtn">Начать игру</button>
+                <button id="pauseBtn">Пауза</button>
+                <button id="resetBtn">Сброс уровня</button>
+            </div>
+        </div>
+        
+        <div class="level-info" id="levelInfo">
+            <h2>Уровень 1: Тренировочные джунгли</h2>
+            <p>Доберитесь до выхода, избегая ниндзя!</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

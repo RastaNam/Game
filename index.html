@@ -15,6 +15,7 @@
                 <div>Уровень: <span id="level">1</span>/5</div>
                 <div>Жизни: <span id="health">100</span></div>
                 <div>Враги: <span id="enemies">3</span></div>
+                <div>Звук: <button id="soundToggle">🔊</button></div>
             </div>
         </div>
         
@@ -22,13 +23,13 @@
         
         <div class="controls">
             <div class="instructions">
-                <p>⬅️ ➡️ - Движение | ⬆️/ПРОБЕЛ - Прыжок | ⬇️ - Присесть/Супер-прыжок | X - Атака</p>
-                <p>✨ Секрет: Присесть + Прыжок = Высокий прыжок!</p>
+                <p>⬅️➡️ Движение | ⬆️/ПРОБЕЛ Прыжок | ⬇️ Присед | X Атака</p>
+                <p>✨ Секрет: Присесть → Прыжок → Отпустить присед = СУПЕР-ПРЫЖОК!</p>
             </div>
             <div class="buttons">
                 <button id="startBtn">Начать игру</button>
                 <button id="pauseBtn">Пауза</button>
-                <button id="resetBtn">Сброс уровня</button>
+                <button id="soundBtn">🔊 Звук</button>
             </div>
         </div>
         
@@ -37,6 +38,20 @@
             <p>Доберитесь до выхода, избегая ниндзя!</p>
         </div>
     </div>
+    
+    <!-- Скрытые элементы для звуков -->
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-game-show-suspense-waiting-667.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="swordSound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-sword-slash-2768.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="jumpSound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-player-jumping-in-a-video-game-2043.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="hitSound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-explosion-2759.mp3" type="audio/mpeg">
+    </audio>
     
     <script src="game.js"></script>
 </body>
